@@ -97,6 +97,7 @@
             this.outOfStockbutton.TabStop = true;
             this.outOfStockbutton.Text = "Out of Stock";
             this.outOfStockbutton.UseVisualStyleBackColor = true;
+            this.outOfStockbutton.CheckedChanged += new System.EventHandler(this.outOfStockbutton_CheckedChanged);
             // 
             // receivedStockbutton
             // 
@@ -110,6 +111,7 @@
             this.receivedStockbutton.TabStop = true;
             this.receivedStockbutton.Text = "Received Stock";
             this.receivedStockbutton.UseVisualStyleBackColor = true;
+            this.receivedStockbutton.CheckedChanged += new System.EventHandler(this.receivedStockbutton_CheckedChanged);
             // 
             // currentStockButton
             // 
@@ -123,6 +125,7 @@
             this.currentStockButton.TabStop = true;
             this.currentStockButton.Text = "Current Stock";
             this.currentStockButton.UseVisualStyleBackColor = true;
+            this.currentStockButton.CheckedChanged += new System.EventHandler(this.currentStockButton_CheckedChanged);
             // 
             // label2
             // 
@@ -169,6 +172,7 @@
             this.inventoryReportTable.RowHeadersWidth = 51;
             this.inventoryReportTable.Size = new System.Drawing.Size(1035, 384);
             this.inventoryReportTable.TabIndex = 18;
+            this.inventoryReportTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.inventoryReportTable_CellContentClick);
             // 
             // PartName
             // 

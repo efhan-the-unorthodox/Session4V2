@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BatchNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchNumbers.Designer.cs">
+      <DependentUpon>BatchNumbers.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     <Compile Include="WarehouseManagement.Designer.cs">
       <DependentUpon>WarehouseManagement.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BatchNumbers.resx">
+      <DependentUpon>BatchNumbers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InventoryManagement.resx">
       <DependentUpon>InventoryManagement.cs</DependentUpon>
     </EmbeddedResource>
