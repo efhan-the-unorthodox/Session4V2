@@ -40,6 +40,7 @@ namespace Session4V2
 
                 var getcurrentstock = db.OrderItems.Where(a => a.Order.SourceWarehouseID == warehouseID);
                 var warehouses = db.Warehouses;
+                inventoryReportTable.Rows.Clear();
                 foreach (var item in getcurrentstock.Select(a => a.Part.Name).Distinct())
                 {
                     object[] row = new object[5];
@@ -52,7 +53,7 @@ namespace Session4V2
                         row[3] = "View Batch Numbers";
                     }
                     row[4] = pD.ID;
-                    inventoryReportTable.Rows.Add(row.ToArray());
+                    inventoryReportTable.Rows.Add(row);
                 }
 
             }
